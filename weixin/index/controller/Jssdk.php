@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Created by PhpStorm.
  * User: HC
@@ -23,7 +23,7 @@ class Jssdk extends Controller{
         $this->assign('time',$timestamp);
         $this->assign('nonceStr',$nonceStr);
         $this->assign('signature',$signature);
-        return $this->redirect('share');
+        return $this->fetch('share');
         
     }
     /*
